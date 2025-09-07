@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+.Python
+
+# VSCode and other IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Byte-compiled / optimized / DLL files
+*.dll
+*.o
+*.obj
+dsa.py
+
+
+# Test and coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+pytest_cache/
+test-results/
+
+# Migrations (optional – if you prefer to regenerate them on new clones)
+**/migrations/*.py
+**/migrations/*.pyc
+!**/migrations/__init__.py

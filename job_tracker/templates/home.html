@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block title %}JobTrackr — Your Personal Job Application Tracker{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="py-5 d-flex align-items-center" style="min-height: 80vh; background: linear-gradient(to right, #f0f8ff, #e6ffff);">
+  <div class="container text-center fade-in">
+    <h1 class="display-4 fw-bold text-teal">Land Jobs Smarter, Not Harder</h1>
+    <p class="lead text-muted mt-3">
+      Track every job you apply to — from bookmarked to offer — all in one powerful, distraction-free dashboard.
+      Say goodbye to messy spreadsheets forever.
+    </p>
+    <div class="mt-4">
+      <a href="{% url 'register' %}" class="btn btn-teal btn-lg me-2">Start Tracking Free</a>
+      <a href="{% url 'login' %}" class="btn btn-outline-secondary btn-lg">Login</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Feature Highlights -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Built to Make Your Job Search Easier</h2>
+      <p class="text-muted">Everything you need to stay organized and focused during your job hunt.</p>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="p-4 shadow-sm rounded h-100">
+          <i class="bi bi-table fs-1 text-teal"></i>
+          <h5 class="fw-bold mt-3">Application Dashboard</h5>
+          <p class="text-muted">Track job title, location, salary, and job post URL — all organized in a clean table format.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 shadow-sm rounded h-100">
+          <i class="bi bi-tags-fill fs-1 text-teal"></i>
+          <h5 class="fw-bold mt-3">Status Management</h5>
+          <p class="text-muted">From "Bookmarked" to "Applied" to "Offer Received" — manage and update statuses in a click.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 shadow-sm rounded h-100">
+          <i class="bi bi-clipboard-data fs-1 text-teal"></i>
+          <h5 class="fw-bold mt-3">Insightful Overview</h5>
+          <p class="text-muted">See how many applications are in each stage and track your job search progress visually.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Full Feature Callout -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1 mt-4 mt-md-0">
+        <h3 class="fw-bold text-teal">Your Job Search, Centralized</h3>
+        <p class="text-muted">
+          Open job links anytime, update details, or delete old listings. No more tabs and lost job posts.
+          JobTrackr gives you a centralized, searchable, and editable list of all your opportunities.
+        </p>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-check-circle-fill text-teal me-2"></i> Add jobs with complete details</li>
+          <li><i class="bi bi-check-circle-fill text-teal me-2"></i> View, edit, or delete any listing</li>
+          <li><i class="bi bi-check-circle-fill text-teal me-2"></i> Visit the original job post any time</li>
+        </ul>
+      </div>
+      <div class="col-md-6 order-1 order-md-2 text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Tracker Feature" class="img-fluid" style="max-height: 350px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-5 text-white bg-teal">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Take Control of Your Job Search</h2>
+    <p class="lead mb-4">No more spreadsheets. No more confusion. Just clarity and control.</p>
+    <a href="{% url 'register' %}" class="btn btn-light btn-lg">Start Tracking Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+  <div class="container text-center">
+    <p class="mb-1">© 2025 JobTrackr. Designed for modern job seekers.</p>
+    <small class="text-muted">Built with Django, Bootstrap & purpose.</small>
+  </div>
+</footer>
+
+{% endblock %}

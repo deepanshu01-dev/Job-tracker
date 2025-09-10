@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9zr93cyvul*j=9+$inys9rqstqzgwni91lrega_1-vi!h#w5*h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.onrender.com']
 
 
 # Application definition
@@ -76,13 +76,9 @@ WSGI_APPLICATION = 'job_tracker.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db_name',
-        'USER': 'user',
-        'PASSWORD': 'pasword',
-        'HOST': 'localhost',
-        'PORT': 'port',
+    'default':{
+      'ENGINE': 'django.db.backends.sqlite3',
+      'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

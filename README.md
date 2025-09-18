@@ -56,8 +56,5 @@ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 
 pip install -r requirements.txt
 
-## 🎥 Demo Video
-
-[Watch the demo](demo/job-tracker-demo.mp4)
 
 
